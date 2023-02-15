@@ -18,7 +18,6 @@ You can find the latest changelog at [Changelog](CHANGELOG.md).
 - [Digius Result](#digius-result)
 - [Digius Error Codes](#digius-error-codes)
 - [Digius SDK API](#digius-sdk-api)
-- [Permissions](#permissions)
 - [Help](#help)
 
 ## Prerequisite
@@ -47,7 +46,6 @@ Add the following code to your `app-level` `build.gradle` file
 
 
 And then, add the dependencies
-
 
 ## Quick Start
 
@@ -132,14 +130,7 @@ See the below table for the public APIs of Digius SDK,
 | *setShowInstructions(boolean showInstructions)*      | false                | Optional      | If it is **true** then the instruction screen will be shown to the user before digilocker screen.                         |
 | *build()*   | -               | -      | Builds DigiusConfig Instance  |
 
-## Permissions
 
-Digius SDK uses the following permissions, they will be automatically merged into the app manifest.
-
-```
-android.permission.INTERNET
-android.permission.ACCESS_NETWORK_STATE
-```
 
 ## Help
 For any queries/feedback , contact us at `support@frslabs.com`
