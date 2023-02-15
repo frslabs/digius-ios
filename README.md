@@ -72,12 +72,43 @@ To get the full benefits import `Digius` wherever you import UIKit
 import UIKit
 import Digius
 ```
+## Getting Started
 
-#### Importing Digius SDK
+### Swift
 
-Add the following code to your `app-level` `build.gradle` file
+1. Initialize the input parameters and import delegate DigiusControllerDelegate
 
+```swift
+class YourViewController: UIViewController,DigiusControllerDelegate {
 
+    func digiusControllerSuccess(_ scanner: Digius.DigiusController, didFinishScanningWithResults results: Digius.digiusResult) {
+        var getAadharData = [String:Any]()
+        getAadharData = (results.AadhaarResult)
+        resultTextView.text = "Name:\(getAadharData["name"] ?? ""), \n Age: \(getAadharData["age"] ?? ""), \n DOB: \(getAadharData["dob"] ?? ""), \n Gender: \(getAadharData["gender"] ?? ""), \n Address: \(getAadharData["address"] ?? ""), \n House: \(getAadharData["house"] ?? ""), \n Landmark: \(getAadharData["landmark"] ?? ""), \n Location: \(getAadharData["location"] ?? ""), \n District: \(getAadharData["district"] ?? ""), \n State: \(getAadharData["state"] ?? ""), \n Country: \(getAadharData["country"] ?? ""), \n Pincode: \(getAadharData["pincode"] ?? ""), \n LastFourDigits: \(getAadharData["lastFourDigits"] ?? ""), \n DocumentNumber: \(getAadharData["documentNumber"] ?? ""), \n IssuedDate: \(getAadharData["issuedDate"] ?? ""), \n Photo: \(getAadharData["photo"] ?? "")"
+        
+        imageView.image = convertBase64StringToImage(imageBase64String: (getAadharData["photo"]) as! String)
+    }
+    
+    func digiusControllerFailed(_ scanner: Digius.DigiusController, didFailWithError error: Int) {
+        print(error)
+    }
+}
+```
+
+2. Invoke Digius SDK
+
+```swift
+    // ...
+    
+    override func viewDidLoad(_ animated: Bool) {
+        let digius = DigiusController(showInstruction: true, delegate:self)
+        digius.modalPresentationStyle = .fullScreen
+        digius.licenceKey = "DIGIUS_LICENCE_KEY"
+        present(digius, animated: false, completion: nil)
+    }
+    
+    // ...    
+```
 
 And then, add the dependencies
 
