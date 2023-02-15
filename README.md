@@ -176,25 +176,6 @@ Following error codes will be returned on the `onError` method of the callback
 | 408  | Invalid settings                                |
 | 409  | Failed to retrieve data                         |
 
-## Digius SDK API
-
-See the below table for the public APIs of Digius SDK,
-
-##### Digius
-| Method/Constructor                                   | Comments    |
-|:---------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Digius(DigiusConfig digiusConfig)                                                 | Instantiates the Digius Object |    
-| *start(Context activityContext, DigiusResultCallback digiusResultCallback)*   | Starts the Digius SDK |
-
-
-##### DigiusConfig
-`DigiusConfig.Builder()` allows to instantiate the `DigiusConfig` object with customisable features. `DigiusConfig` is to be set when instantiating `Digius` object , See [Digius](#digius)
-| Method                                               | Default              | Required | Comments    |
-|:---------------------------------------------------- |:-------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *setLicenceKey(String licenseKey)*                   | NULL                 | Yes      | Sets the License Key needed for Digius SDK                          |
-| *setShowInstructions(boolean showInstructions)*      | false                | Optional      | If it is **true** then the instruction screen will be shown to the user before digilocker screen.                         |
-| *build()*   | -               | -      | Builds DigiusConfig Instance  |
-
 
 
 ## Help
