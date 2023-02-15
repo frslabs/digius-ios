@@ -110,19 +110,6 @@ class YourViewController: UIViewController,DigiusControllerDelegate {
     // ...    
 ```
 
-And then, add the dependencies
-
-## Quick Start
-
-#### Initialise and run the Digius SDK
-
-Initialize an instance of `Digius` with the appropriate parameters, and call `start()` to invoke the Digius SDK. Refer [Digius SDK API](#digius-sdk-api) for more information regarding the individual APIs.
-
-Given below is the fully configured Digius SDK invokation.
-
-
-For all `errorCode`'s and their meanings refer [Digius Error Codes](#digius-error-codes).
-
 ## Digius Result
 
 You can use the following methods in the `DigiusResult` instance to parse the success result:
