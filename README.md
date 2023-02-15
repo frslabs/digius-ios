@@ -51,6 +51,27 @@ use_frameworks!
 pod 'Digius', '1.0.0'
 end
 ```
+###### Save/Edit Netrc settings to install custom pod
+
+You will need a valid netrc credentials to install cropus from maven, which can be obtained by contacting `support@frslabs.com`. 
+
+1. Create or edit .netrc file under current user's home directory
+2. Write the below lines into that file, replace <YOUR_USERNAME> and <YOUR_PASSWORD> with your credentials which is shared through email and save the file.
+```ruby
+machine digius-ios.repo.frslabs.space
+login <YOUR_USERNAME>
+password <YOUR_PASSOWRD>
+```
+3. In terminal enter below command to install the pod 
+
+   pod install or pod update or pod install --repo-update.
+
+To get the full benefits import `Digius` wherever you import UIKit
+
+``` swift
+import UIKit
+import Digius
+```
 
 #### Importing Digius SDK
 
