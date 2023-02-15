@@ -11,8 +11,7 @@ You can find the latest changelog at [Changelog](CHANGELOG.md).
 - [Prerequisite](#prerequisite)
 - [Set Up Digius SDK](#set-up-digius-sdk)
     - [Requirements](#requirements)
-    - [Download Digius SDK](#download-digius-sdk)
-    - [Importing Digius SDK](#importing-digius-sdk)
+    - [Install Digius SDK](#install-digius-sdk)
 - [Quick Start](#quick-start)
     - [Initialise and run the Digius SDK](#initialise-and-run-the-digius-sdk)
 - [Digius Result](#digius-result)
@@ -36,8 +35,22 @@ Make sure that your project meets these requirements:
 - iOS 13.0+
 - Swift 5.0
 
-#### Download Digius SDK
+#### Install Digius SDK
 
+### Cocoapods
+
+
+You can use [CocoaPods](http://cocoapods.org/) to install `digius` by adding it to your `Podfile`:
+
+```ruby
+source 'https://gitlab.com/frslabs-public/ios/digius-ios.git'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+target '<Your Target Name>' do
+use_frameworks!
+pod 'Digius', '1.0.0'
+end
+```
 
 #### Importing Digius SDK
 
