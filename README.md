@@ -139,9 +139,18 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 | String      | *getAadharData["state"]*                         | Returns state                    |
 | String      | *getAadharData["country"]*                       | Returns country                  |
 | String      | *getAadharData["pincode"]*                       | Returns pincode                  |
-| String      | *getAadharData["photo"]*                         | Returns user's photo             |
+| String      | *getAadharData["photo"]*                         | Returns user's photo in BASE64 String            |
 | String      | *getAadharData["lastFourDigits"]*         | Returns last four digits of aadhaar     |
 | String      | *getAadharData["issuedDate"]*             | Returns aadhaar issued date and time     |
+
+PHOTO: Convert BASE64 into Image
+```swift
+  func convertBase64StringToImage (imageBase64String:String) -> UIImage {
+      let imageData = Data(base64Encoded: imageBase64String)
+      let image = UIImage(data: imageData!)
+      return image!
+  }
+```
 
 Available document types are
 
