@@ -1,5 +1,5 @@
 # DIGIUS SDK (iOS)
-![version](https://img.shields.io/badge/version-v1.1.1-blue)
+![version](https://img.shields.io/badge/version-v1.0.0-blue)
 
 
 Digius SDK is a one-shot solution to securely fetch documents from DigiLocker. It helps to eliminate use of physical documents and enables sharing of e-documents which is stored in DigiLocker account.
@@ -53,7 +53,7 @@ end
 ```
 ###### Save/Edit Netrc settings to install custom pod
 
-You will need a valid netrc credentials to install cropus from maven, which can be obtained by contacting `support@frslabs.com`. 
+You will need a valid netrc credentials to install digius from maven, which can be obtained by contacting `support@frslabs.com`. 
 
 1. Create or edit .netrc file under current user's home directory
 2. Write the below lines into that file, replace <YOUR_USERNAME> and <YOUR_PASSWORD> with your credentials which is shared through email and save the file.
