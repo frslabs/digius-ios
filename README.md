@@ -145,8 +145,8 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 Available document types are
 
   | Method                      | Value |  Document            |
-  | --------------------------- | ------------------- |
-  | results.digiusDocumentType  | AADHAAR |Aadhaar Card        |
+  | --------------------------- | ------- | ------------------- |
+  | results.digiusDocumentType  | AADHAAR |  Aadhaar Card        |
 
 
 ## Digius Error Codes
