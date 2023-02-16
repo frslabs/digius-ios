@@ -12,11 +12,9 @@ You can find the latest changelog at [Changelog](CHANGELOG.md).
 - [Set Up Digius SDK](#set-up-digius-sdk)
     - [Requirements](#requirements)
     - [Install Digius SDK](#install-digius-sdk)
-- [Quick Start](#quick-start)
-    - [Initialise and run the Digius SDK](#initialise-and-run-the-digius-sdk)
+- [Getting Started](#getting-started)
 - [Digius Result](#digius-result)
 - [Digius Error Codes](#digius-error-codes)
-- [Digius SDK API](#digius-sdk-api)
 - [Help](#help)
 
 ## Prerequisite
