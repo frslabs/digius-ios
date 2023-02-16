@@ -81,10 +81,8 @@ class YourViewController: UIViewController,DigiusControllerDelegate {
 
     func digiusControllerSuccess(_ scanner: Digius.DigiusController, didFinishScanningWithResults results: Digius.digiusResult) {
         var getAadharData = [String:Any]()
-        getAadharData = (results.AadhaarResult)
-        resultTextView.text = "Name:\(getAadharData["name"] ?? ""), \n Age: \(getAadharData["age"] ?? ""), \n DOB: \(getAadharData["dob"] ?? ""), \n Gender: \(getAadharData["gender"] ?? ""), \n Address: \(getAadharData["address"] ?? ""), \n House: \(getAadharData["house"] ?? ""), \n Landmark: \(getAadharData["landmark"] ?? ""), \n Location: \(getAadharData["location"] ?? ""), \n District: \(getAadharData["district"] ?? ""), \n State: \(getAadharData["state"] ?? ""), \n Country: \(getAadharData["country"] ?? ""), \n Pincode: \(getAadharData["pincode"] ?? ""), \n LastFourDigits: \(getAadharData["lastFourDigits"] ?? ""), \n DocumentNumber: \(getAadharData["documentNumber"] ?? ""), \n IssuedDate: \(getAadharData["issuedDate"] ?? ""), \n Photo: \(getAadharData["photo"] ?? "")"
-        
-        imageView.image = convertBase64StringToImage(imageBase64String: (getAadharData["photo"]) as! String)
+        getAadharData = (results.AadhaarResult) // Return the Aadhaar result
+        print(results.digiusDocumentType) // Return type of document
     }
     
     func digiusControllerFailed(_ scanner: Digius.DigiusController, didFailWithError error: Int) {
