@@ -114,35 +114,39 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 
 | Return Type              | Method                        | Usage                                                            |
 | ------------------------ | ----------------------------- | ---------------------------------------------------------------- |
-| DigiusDocumentType(Enum) | *getDocumentType()*           | Returns selected document type                                   |
-| AadhaarResult            | *getAadhaarData()*            | Returns aadhaar data if document type is aadhaar                 |
+| DigiusDocumentType | results.digiusDocumentType          | Returns selected document type                                   |
+| AadhaarResult            |results.AadhaarResult            | Returns aadhaar data if document type is aadhaar                 |
 
-`getAadhaarData()` returns `AadhaarResult` instance with following methods:
+`results.AadhaarResult` returns `AadhaarResult` instance with following methods:
+```swift
+        var getAadharData = [String:Any]()
+        getAadharData = (results.AadhaarResult)
+```
 
 | Return Type | Method                               | Usage                            |
 | ----------- | ------------------------------------ | ---------------------------------|
-| String      | *getDocumentNumber()*                | Returns document number          |
-| String      | *getName()*                          | Returns document's name          |
-| String      | *getAge()*                           | Returns age                      |
-| String      | *getDob()*                           | Returns date of birth            |
-| String      | *getGender()*                        | Returns gender                   |
-| String      | *getAddress()*                       | Returns full address             |
-| String      | *getHouse()*                         | Returns house name               |
-| String      | *getLandmark()*                      | Returns landmark                 |
-| String      | *getLocation()*                      | Returns location                 |
-| String      | *getDistrict()*                      | Returns district                 |
-| String      | *getState()*                         | Returns state                    |
-| String      | *getCountry()*                       | Returns country                  |
-| String      | *getPincode()*                       | Returns pincode                  |
-| String      | *getPhoto()*                         | Returns user's photo             |
-| String      | *getAadhaarLastFourDigits()*         | Returns last four digits of aadhaar     |
-| String      | *getAadhaarIssuedDate()*             | Returns aadhaar issued date and time     |
+| String      | *getAadharData["documentNumber"]*                | Returns document number          |
+| String      | *getAadharData["name"]*                          | Returns document's name          |
+| String      | *getAadharData["age"]*                           | Returns age                      |
+| String      | *getAadharData["dob"]*                           | Returns date of birth            |
+| String      | *getAadharData["gender"]*                        | Returns gender                   |
+| String      | *getAadharData["address"]*                       | Returns full address             |
+| String      | *getAadharData["house"]*                         | Returns house name               |
+| String      | *getAadharData["landmark"]*                      | Returns landmark                 |
+| String      | *getAadharData["location"]*                      | Returns location                 |
+| String      | *getAadharData["district"]*                      | Returns district                 |
+| String      | *getAadharData["state"]*                         | Returns state                    |
+| String      | *getAadharData["country"]*                       | Returns country                  |
+| String      | *getAadharData["pincode"]*                       | Returns pincode                  |
+| String      | *getAadharData["photo"]*                         | Returns user's photo             |
+| String      | *getAadharData["lastFourDigits"]*         | Returns last four digits of aadhaar     |
+| String      | *getAadharData["issuedDate"]*             | Returns aadhaar issued date and time     |
 
 Available document types are
 
-  | Value                       | Document            |
+  | Method                      | Value |  Document            |
   | --------------------------- | ------------------- |
-  | DigiusDocumentType.AADHAAR  | Aadhaar Card        |
+  | results.digiusDocumentType  | AADHAAR |Aadhaar Card        |
 
 
 ## Digius Error Codes
