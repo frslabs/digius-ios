@@ -118,9 +118,10 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 | AadhaarResult            |results.AadhaarResult            | Returns aadhaar data if document type is aadhaar                 |
 
 `results.AadhaarResult` returns `AadhaarResult` instance with following methods:
+
 ```swift
-        var getAadharData = [String:Any]()
-        getAadharData = (results.AadhaarResult)
+    var getAadharData = [String:Any]()
+    getAadharData = (results.AadhaarResult)
 ```
 
 | Return Type | Method                               | Usage                            |
