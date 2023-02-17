@@ -148,6 +148,8 @@ PHOTO: Convert BASE64 into Image
       let image = UIImage(data: imageData!)
       return image!
   }
+  
+  convertBase64StringToImage(imageBase64String: (getAadharData["photo"]) as! String)
 ```
 
 Available document types are
