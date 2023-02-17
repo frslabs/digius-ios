@@ -161,7 +161,7 @@ Available document types are
 
 ## Digius Error Codes
 
-Following error codes will be returned on the `onError` method of the callback
+Following error codes will be returned on the `didFailWithError` method of the callback
 
 | CODE | DESCRIPTION                                     |
 | ---- | ------------------------------------------------|
