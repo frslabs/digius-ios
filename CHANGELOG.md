@@ -1,4 +1,6 @@
 # Changelog
+## **v1.0.1** - *12-11-2024*
+- PAN support is added.
 
 ## **v1.0.0** - *10-2-2023*
 **Initial Release**
