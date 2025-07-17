@@ -80,8 +80,8 @@ import Digius
 class YourViewController: UIViewController,DigiusControllerDelegate {
 
     func digiusControllerSuccess(_ scanner: Digius.DigiusController, didFinishScanningWithResults results: Digius.digiusResult) {
-        var getAadharData = [String:Any]()
-        getAadharData = (results.AadhaarResult) // Return the Aadhaar result
+        var getData = [String:Any]()
+        getData = (results.result) // Return the document result
         print(results.digiusDocumentType) // Return type of document
     }
     
