@@ -173,6 +173,7 @@ Available document types are
 
   | Method                      | Value |  Document            |
   | --------------------------- | ------- | ------------------- |
+  | results.digiusDocumentType  | AADHAAR |  Aadhaar Card        |
   | results.digiusDocumentType  | PAN |  Pan Card        |
 
 
