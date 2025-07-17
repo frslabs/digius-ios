@@ -113,7 +113,8 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 | Return Type              | Method                        | Usage                                                            |
 | ------------------------ | ----------------------------- | ---------------------------------------------------------------- |
 | DigiusDocumentType | results.digiusDocumentType          | Returns selected document type                                   |
-| AadhaarResult            |results.AadhaarResult            | Returns aadhaar data if document type is aadhaar                 |
+| AadhaarResult            |results.result            | Returns aadhaar data if document type is aadhaar                 |
+| PanResult | results.result| Returns pan data if document type is pan | 
 
 `results.AadhaarResult` returns `AadhaarResult` instance with following methods:
 
