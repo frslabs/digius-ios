@@ -1,5 +1,5 @@
 # DIGIUS SDK (iOS)
-![version](https://img.shields.io/badge/version-v1.0.1-blue)
+![version](https://img.shields.io/badge/version-v1.0.2-blue)
 
 
 Digius SDK is a one-shot solution to securely fetch documents from DigiLocker. It helps to eliminate use of physical documents and enables sharing of e-documents which is stored in DigiLocker account.
@@ -46,7 +46,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '13.0'
 target '<Your Target Name>' do
 use_frameworks!
-pod 'Digius', '1.0.1'
+pod 'Digius', '1.0.2'
 end
 ```
 ###### Save/Edit Netrc settings to install custom pod
@@ -56,7 +56,7 @@ You will need a valid netrc credentials to install digius from maven, which can 
 1. Create or edit .netrc file under current user's home directory
 2. Write the below lines into that file, replace <YOUR_USERNAME> and <YOUR_PASSWORD> with your credentials which is shared through email and save the file.
 ```ruby
-machine digius-ios.repo.frslabs.space
+machine www.repo2.frslabs.space
 login <YOUR_USERNAME>
 password <YOUR_PASSOWRD>
 ```
