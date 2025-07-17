@@ -116,7 +116,7 @@ You can use the following methods in the `DigiusResult` instance to parse the su
 | AadhaarResult            |results.result            | Returns aadhaar data if document type is aadhaar                 |
 | PanResult | results.result| Returns pan data if document type is pan | 
 
-`results.AadhaarResult` returns `AadhaarResult` instance with following methods:
+`results.result` returns `AadhaarResult` instance with following methods if the document selected is Aadhaar:
 
 ```swift
     var getAadharData = [String:Any]()
@@ -153,11 +153,27 @@ PHOTO: Convert BASE64 into Image
   convertBase64StringToImage(imageBase64String: (getAadharData["photo"]) as! String)
 ```
 
+`results.result` returns `PanResult` instance with following methods if the document selected is PAN:
+
+```swift
+    var getPanData = [String:Any]()
+    getPanData = (results.result)
+```
+
+| Return Type | Method                               | Usage                            |
+| ----------- | ------------------------------------ | ---------------------------------|
+| String      | *getPanData["documentNumber"]*                | Returns document number          |
+| String      | *getPanData["name"]*                          | Returns document's name          |
+| String      | *getPanData["dob"]*                           | Returns date of birth            |
+| String      | *getPanData["gender"]*                        | Returns gender                   |
+| String      | *getPanData["verifiedOn"]*             | Returns pan verified date     |
+
+
 Available document types are
 
   | Method                      | Value |  Document            |
   | --------------------------- | ------- | ------------------- |
-  | results.digiusDocumentType  | AADHAAR |  Aadhaar Card        |
+  | results.digiusDocumentType  | PAN |  Pan Card        |
 
 
 ## Digius Error Codes
