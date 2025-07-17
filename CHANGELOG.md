@@ -1,4 +1,8 @@
 # Changelog
+## **v1.0.2** - *17-07-2025*
+- Bug fixes
+- Swift & Xcode 16.4 version update.
+
 ## **v1.0.1** - *12-11-2024*
 - Support digilocker PAN
 
