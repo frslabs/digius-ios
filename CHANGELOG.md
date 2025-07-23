@@ -1,4 +1,7 @@
 # Changelog
+## **v1.0.4** - *23-07-2025*
+- Back button fix in instructions page.
+
 ## **v1.0.2** - *17-07-2025*
 - Bug fixes
 - Swift & Xcode 16.4 version update.
