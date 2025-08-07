@@ -1,4 +1,7 @@
 # Changelog
+## **v1.0.5** - *07-08-2025*
+- Bug fixes
+
 ## **v1.0.4** - *23-07-2025*
 - Back button fix in instructions page.
 
