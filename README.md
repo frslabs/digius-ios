@@ -1,5 +1,5 @@
 # DIGIUS SDK (iOS)
-![version](https://img.shields.io/badge/version-v1.0.6-blue)
+![version](https://img.shields.io/badge/version-v1.0.7-blue)
 
 
 Digius SDK is a one-shot solution to securely fetch documents from DigiLocker. It helps to eliminate use of physical documents and enables sharing of e-documents which is stored in DigiLocker account.
@@ -46,7 +46,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '13.0'
 target '<Your Target Name>' do
 use_frameworks!
-pod 'Digius', '1.0.6'
+pod 'Digius', '1.0.7'
 end
 ```
 ###### Save/Edit Netrc settings to install custom pod
